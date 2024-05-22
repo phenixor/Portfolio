@@ -1,0 +1,45 @@
+.HeaderDiv {
+    header {
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+      }
+      background-color: #34495e; // Couleur de fond du header
+      color: #1abc9c; // Couleur du texte
+      padding: 20px; // Espacement intérieur
+      display: flex; // Utiliser flexbox pour le layout
+      align-items: center; // Aligner les éléments au centre verticalement
+      justify-content: space-between; // Espacer les éléments horizontalement
+  
+      div {
+        h1 {
+          margin: 0; // Supprimer la marge par défaut du h1
+          font-size: 24px; // Taille de police du titre
+          font-family: 'Arial', sans-serif; // Police du titre
+        }
+      }
+  
+      nav {
+        display: flex; // Utiliser flexbox pour les liens de navigation
+        gap: 20px; // Espacement entre les liens
+  
+        .Link {
+          color: #1abc9c; // Couleur des liens
+          text-decoration: none; // Supprimer la décoration par défaut des liens
+          font-size: 16px; // Taille de la police des liens
+          font-family: 'Arial', sans-serif; // Police des liens
+          transition: color 0.3s; // Transition pour le changement de couleur
+  
+          &:hover {
+            color: #1abc9c; // Couleur des liens au survol
+          }
+  
+          &.active {
+            font-weight: bold; // Mettre en gras le lien actif
+          }
+        }
+      }
+    }
+  }
+  

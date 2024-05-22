@@ -1,0 +1,28 @@
+body {
+    background-color: #160b2b;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+// Import des styles des composants
+@import 'components/Dropdown.scss';
+@import 'components/SlideShow.scss';
+@import 'components/ContactForm.scss';
+// Ajoutez d'autres imports de composants selon besoin
+
+// // Import des styles des mises en page
+@import 'layouts/Header.scss';
+@import 'layouts/Footer.scss';
+// Ajoutez d'autres imports de mises en page selon besoin
+
+// // Import des styles des pages
+@import 'pages/home.scss';
+@import 'pages/About-me.scss';
+@import 'pages/Skills.scss';
+@import 'pages/mon-vieux-grimoire.scss';
+@import 'pages/e404.scss';
+// Ajoutez d'autres imports de pages selon besoin
