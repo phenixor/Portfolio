@@ -1,15 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import slides from "../Projets.json";
 
 function SlideShow() {
-    const [slides, setSlides] = useState([]);
     const [currentSlide, setCurrentSlide] = useState(0);
-
-    useEffect(() => {
-        fetch(`/src/Projets.json`)
-            .then((response) => response.json())
-            .then((data) => setSlides(data))
-            .catch((error) => console.error('Error fetching slides:', error));
-    }, []);
 
     const nextSlide = () => {
         setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
