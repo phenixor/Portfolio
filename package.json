@@ -2,7 +2,7 @@
   "name": "p8",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://phenixor.github.io/Portfolio",
+  "homepage": "https://664da2aa64fc28a8089bf0a3--wondrous-alpaca-fd6540.netlify.app",
   "type": "module",
   "scripts": {
     "dev": "vite",
