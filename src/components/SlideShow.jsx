@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import slides from "../Projets.json";
+import slides from "../../Projets.json";
 
 function SlideShow() {
     const [currentSlide, setCurrentSlide] = useState(0);
