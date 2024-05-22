@@ -5,7 +5,7 @@ function SlideShow() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
-        fetch(`${process.env.PUBLIC_URL}/Projets.json`)
+        fetch(`/Projets.json`)
             .then((response) => response.json())
             .then((data) => setSlides(data))
             .catch((error) => console.error('Error fetching slides:', error));
