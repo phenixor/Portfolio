@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import slides from "../../Projets.json";
+import slides from "../data/projets.json"
 
 function SlideShow() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,8 +41,8 @@ function SlideShow() {
             <div className="slides">
                 {slides.map((slide, index) => (
                     <div key={index} className={index === currentSlide ? 'slide active' : 'slide'}>
-                        <a href={slide.link} target="_blank" rel="noopener noreferrer">
-                            <img className='slide__image' src={slide.image} alt={`Image ${index + 1}`} />
+                        <a href={`/projects/${slide.link}`} target="_blank" rel="noopener noreferrer">
+                            <img className='slide__image' src={(`/assets/${slide.image}`)} alt={`Image ${index + 1}`} />
                         </a>
                     </div>
                 ))}
